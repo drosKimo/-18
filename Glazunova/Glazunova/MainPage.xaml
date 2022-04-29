@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Glazunova.MainPage">
+    <StackLayout>
+        <Button Text="Получить курс" Command="{Binding LoadDataCommand}"  />
+        
+        <Label FontSize="Medium" Text="ID типа" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Id}" />
+
+        <Label FontSize="Medium" Text="Название" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Name}" />
+
+        <Label FontSize="Medium" Text="Поколение" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Generation}" />
+        
+        <Label FontSize="Medium" Text="Имена покемонов с этим типом" />
+        <Label FontSize="Medium" FontAttributes="Bold"  Text="{Binding Pokemon}" />
+    </StackLayout>
+
+</ContentPage>
+
